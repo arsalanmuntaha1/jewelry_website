@@ -5,11 +5,10 @@ import { libreBodoni } from './lib/fonts';
 export default function Home() {
     return (
         <div>
-            <Header />
             <div className="flex justify-center items-center mt-[165.97px]">
                 <div className="">
                     <h1
-                        className={`font-libre h-[162.53px] w-[472.97px] leading-[62.24px] text-[37.84px] font-bold mb-[60.2px]`}
+                        className={`${libreBodoni.className} h-[162.53px] w-[472.97px] leading-[62.24px] text-[37.84px] font-bold mb-[60.2px]`}
                     >
                         IMPECCABLE CRAFTSMANSHIP AND FINESSE
                     </h1>

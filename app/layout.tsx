@@ -1,27 +1,5 @@
 import type { Metadata } from 'next';
-import localFont from 'next/font/local';
 import './globals.css';
-import { Rye } from 'next/font/google';
-import { Libre_Bodoni } from 'next/font/google';
-
-export const rye = Rye({
-    weight: '400',
-    variable: '--font-rye',
-});
-export const libre_bodoni = Libre_Bodoni({
-    weight: '400',
-    variable: '--font-libre_bodoni',
-});
-const geistSans = localFont({
-    src: './fonts/GeistVF.woff',
-    variable: '--font-geist-sans',
-    weight: '100 900',
-});
-const geistMono = localFont({
-    src: './fonts/GeistMonoVF.woff',
-    variable: '--font-geist-mono',
-    weight: '100 900',
-});
 
 export const metadata: Metadata = {
     title: 'Purity Jewelery',
@@ -36,9 +14,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-                {children}
-            </body>
+            <body className={`antialiased`}>{children}</body>
         </html>
     );
 }

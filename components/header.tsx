@@ -13,7 +13,7 @@ function Header() {
                     <input
                         type="text"
                         placeholder="Search for Gold Jewellery, Diamond Jewellery and more…"
-                        className="text-[#6C757D] bg-transparent pl-[26.73] size-[18.68px] w-[769.89px] py-7 "
+                        className="text-[#6C757D] bg-transparent pl-[26.73px] size-[18.68px] w-[769.89px] py-7 "
                     />
                     <Search className="" />
                 </div>

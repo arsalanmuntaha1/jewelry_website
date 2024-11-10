@@ -3,22 +3,27 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --font-libre-bodoni: 'Libre Bodoni', serif;
+    --background: #ffffff;
+    --foreground: #171717;
+}
+
+.font-libre {
+    font-family: var(--font-libre-bodoni);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: ;
-    --foreground: ;
-  }
+    :root {
+        --background: ;
+        --foreground: ;
+    }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    color: var(--foreground);
+    background: var(--background);
+    font-family: Arial, Helvetica, sans-serif;
 }
-.rye{
-  font-family: var(--font-rye)
+.rye {
+    font-family: var(--font-rye);
 }
